@@ -1,6 +1,5 @@
-let choice1;
 
-let taskon = true;
+
  const menu =`TASK MANAGER\n\nWhat would you like to do (Please enter one of the options below):\n"TASKS" - Displays All Tasks\n"NEW" - Add A New Task\n"REMOVE" - Remove A Task\n"CLOSE" - Close The Task Manager`
 
 const tasks = [
@@ -9,6 +8,7 @@ const tasks = [
 ];
 
 let showTasks = ``;
+let newTask;
 let userInput = prompt(menu);
 
 while (userInput !== `CLOSE`){
@@ -23,7 +23,9 @@ while (userInput !== `CLOSE`){
     }
 
     if (userInput === `NEW`){
-        alert(`You selected NEW`)
+        newTask = prompt(`Please enter the new task:`)
+        alert (`"${newTask}" has been added.`) 
+        tasks.push(newTask);
     }
 
     if (userInput === `REMOVE`){
