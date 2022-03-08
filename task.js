@@ -32,7 +32,7 @@ while (userInput !== `CLOSE`){
         alert(`You selected REMOVE`)
     }
 
-    let userInput = prompt(menu)
+    userInput = prompt(menu)
 }
 
 alert(`Thank you for using Task Manager.`)
